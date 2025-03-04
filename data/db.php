@@ -1,9 +1,15 @@
 <?php
-    $hostName = "localhost";
-    $dbUser = "root";
-    $dbPassword = "";
-    $dbName = "nuloof";
-    $conn = mysqli_connect($hostName, $dbUser, $dbPassword, $dbName);
-    if (!$conn) {
-        die("Something went wrong!");
-    }
+$host = "tech4u"; // Example: "mysql.hostinger.com"
+$user = "tech4u";
+$pass = "tech4uNuloof";
+$dbname = "u783231124_tech4u";
+
+// Create connection
+$conn = new mysqli($host, $user, $pass, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+?>
