@@ -2,8 +2,8 @@
 session_start();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-require '../vendor/autoload.php';
-include('../data/db.php');
+require 'vendor/autoload.php';
+include('data/db.php');
 
 $errorMessage = '';
 
